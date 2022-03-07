@@ -1,0 +1,202 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-image: url(../images/greybg.jpg);
+	
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+	animation-name: title;
+  	animation-duration: 1.5s;
+	color: darkgrey;
+	font-family: 'Shadows Into Light';
+}
+
+
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.active a{
+	text-decoration: none;
+	
+}
+
+/*Style the tables*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border-color: white;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+	background-color: black;
+	color: white;
+  }
+
+/*Style the images*/
+img{
+    height: 500px;
+    width:auto;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+	border-width: 5px;
+    margin: 10px;
+	background-color: lightgrey;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	font-family: 'Roboto';
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+	margin: 10px 0px;
+}
+
+
+/*Add borders around the main components and some
+space too*/
+main, footer{
+	border: 2px solid grey;
+	margin: 10px 0;
+	background-color: white;
+	opacity: 0.8;
+}
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	background-color: black;
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color:white;
+	font-weight:500;
+}
+
+video{
+	margin:10px;
+}
+
+
+/*Added this so the links stay the same color*/
+a:link {text-decoration:none;
+	color:grey}
+a:visited{color:grey}
+a:hover{
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;
+	
+}
+
+.active a:hover{
+	color:black;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.review li{
+	list-style-type: circle;
+	list-style-position: inside;
+	margin: 10px;
+}
+
+
+.grow{
+	transition: 1s ease;
+}
+	
+.grow:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.5);
+	transition: 1s ease;
+}
+
+.img-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+@keyframes title {
+	0% {background-color: #000000;
+	color: darkred;
+	border-color: black;
+opacity: 0.3;}
+	40% {background-color: grey; 
+	text-align: center;
+	color: darkred;
+opacity: 0.6;}
+	70% {background-color: grey; 
+		color:grey;
+		opacity: 0.9;
+
+	}
+
+  }
+
+/* contact form*/
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+
