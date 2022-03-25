@@ -157,6 +157,7 @@ a:hover{
 @keyframes title {
 	0% {background-color: #000000;
 	color: darkred;
+	font-size:10px;
 	border-color: black;
 opacity: 0.3;}
 	40% {background-color: grey; 
